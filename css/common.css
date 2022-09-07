@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* 아넥스컴바인 공통 모듈 CSS - common.css */
+
+
+
+/* 1. 상단영역 */
+#header{position:fixed;left: 0;right: 0;top: 0;box-shadow:0 2px 10px 0 rgb(0 0 0 / 7%);z-index: 20; background-color: #fff;}
+.header_area{ padding: 0 5%; max-width:1280px; height:80px; margin: 0 auto; display: flex;justify-content: space-between; align-items: center;}
+.header_area .logo img{display: block;}
+.header_area .gnb{display: flex;}
+.header_area .gnb li{margin-left: 50px;}
+.header_area .gnb li a{height:50px; line-height:50px; display: block; font-size: 18px;}
+.header_area .gnb li a:hover{font-weight: bold;transition: .2s linear;}
+.header_area .gnb li a:not(:hover){transition: .2s linear;}
+
+
+/* 하단영역 */
+footer{border-top: 1px solid #ddd;}
+.footer_area{ padding: 30px 0;width: 90%; max-width:1280px;margin: 0 auto;  text-align: center;}
+.foot_logo{width:250px;}
+.footer_info{margin:10px 0;}
+.footer_info p{display: inline-block;}
+.footer_info .space{padding:0 5px;}
+.copyright{color: #ccc;}
+
+

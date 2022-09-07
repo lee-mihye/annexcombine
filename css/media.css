@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* 아넥스컴바인 메인 페이지 미디어쿼리 - media.css */
+
+
+
+/* 햄버거 메뉴안의 GNB메뉴 width 900px전에는 숨긴다*/
+.gnb_ham {display: none;}
+/* 데스크탑에서는 br태그 숨김 */
+.br_block {display: none;}
+
+.br_block_mo {display: block;}
+
+
+/* 데스크탑에서는 svg 모바일 이미지 숨기기 */
+.svg_mo{display: none;}
+
+@media only screen and (max-width:1470px) {
+    .service_main .service_section1{display: block; width: 90%; margin:0 auto;}
+    .section1_img{width: unset; margin-right: 0;}
+    .section1_txt{margin-top: 4%;}
+}
+
+
+@media only screen and (max-width:900px) {
+    /* br태그 넣기 */
+    .br_block {display: block;}
+    
+
+    /* index.html */
+    /*********** 헤더영역 ***********/
+    .header_area {height: 60px; padding-right: 0;}
+    .header_area .logo img {width: 220px;}
+    .header_area .gnb {display: none;}
+
+    /* 햄버거메뉴 */
+    .bg-shadow {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        cursor: pointer;
+    }
+    .ham {position: relative;width: 70px;height: 100%;}
+
+    #header .all_menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25px;
+        height: 22px;
+        z-index: 102;
+    }
+    #header .all_menu span {
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        transition: all 0.2s ease-in-out 0s;
+    }
+    #header.open .all_menu span {background-color: #000;}
+
+    #header .all_menu span.am_top {top: 0;}
+    #header .all_menu span.am_mid {top: 9px;}
+    #header .all_menu span.am_bot {top: 18px;}
+
+    #header .all_menu.on span.am_top {top: 13px;transform: rotate(45deg);}
+    #header .all_menu.on span.am_mid {width: 0;}
+    #header .all_menu.on span.am_bot {top: 13px;transform: rotate(-45deg);}
+
+    /* 햄버거 메뉴안의 GNB */
+    .gnb_ham {display: block;}
+    #header .gnb_ham {
+        position: absolute;
+        top: 0px;
+        right: -100%;
+        height: 100vh;
+        width: 420px;
+        background-color: #Fff;
+        transition: right 0.6s cubic-bezier(0.71, 0.29, 0.27, 0.94) 0s;
+        z-index: 101;
+    }
+    #header.open .gnb_ham {right: 0px;font-size: 24px;}
+    #header .gnb_ham .gnb {padding: 100px 30px 0;}
+
+    /* 견적문의박스 */
+    #header .gnb_ham .gnb .estimate_box {
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        background: #00BAB3;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #header .gnb_ham .gnb li { padding: 20px 0;text-align: right;}
+    #header .gnb_ham .gnb li a {display: inline-block;color: #000;font-weight: 700;text-align: right;}
+
+
+
+    /************ 메인배너 영역 ************/
+    .mainban_txt_area .sub {
+        display: inline-block;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        font-size: 38px;
+    }
+    .mainban_txt_area .txt {font-size: 50px;}
+
+    /* 푸터 */
+    .foot_logo {width: 200px;}
+
+
+
+    /* 서브페이지 공통 */
+    .introduce_wrap, .center_wrap, .service_wrap, .estimate_wrap {margin-top:60px;}
+
+
+
+
+    /* introduce.html.html */
+    .introduce_wrap #introduce_section{background-color: #fff;}
+    .introduce_wrap #introduce_section .section_area{padding-top: 0;}
+    .introduce_wrap .section_listbox>div{box-shadow: 3px 3px 10px 1px rgb(0, 0, 0, 0.1);}
+
+    /* center.html */ 
+    .map_wrap{display: unset;}
+    .map_img{width:100%; margin-right: 40px; margin-bottom: 20px;}
+
+
+
+    /************ service.html ************/
+   
+
+
+    }/************** max-width 900px 끝 *********************/
+
+
+
+
+@media only screen and (max-width:500px) {
+    /* index.html */
+    /************* 헤더영역 *************/
+    /* 모바일사이즈에서 BR태그 빼기 */
+    .br_block_mo {display: none;}
+    
+    /* 모바일사이즈에서 BR태그 넣기 */
+    .br_block_mo_500 {display: block;}
+    
+
+    #header .gnb_ham {width: 90%;}
+
+    /* 견적문의박스 */
+    #header .gnb_ham .gnb .estimate_box {
+        height: 60px;
+        line-height: 60px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    #header.open .gnb_ham {font-size: 22px;}
+
+
+
+    /************ 메인배너 영역 ************/
+    .mainban_txt_area .sub {
+        display: inline-block;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        font-size: 7vw;
+    }
+    .mainban_txt_area .txt {font-size: 10vw;}
+
+    .button {
+        font-size: 5vw;
+        padding: 3vw;
+        width: 50vw;
+    }
+
+    /* 섹션 공통영역 */
+    .section_area {padding: 20% 0;}
+    .section_title {text-align: center;padding-bottom: 5%;}
+    .section_title h3 {font-size: 5.5vw;}
+    .section_title h2 {font-size: 9vw; line-height: 11vw; margin: 3vw 0;}
+    .section_listbox .icon_wrap {padding: 10%;}
+
+    /* 섹션 버튼 공통 */
+    .button.sectin_button {width: 45vw;font-size: 5vw;padding: 2vw;}
+    .section_listbox h4 {font-size: 7vw;}
+
+    
+
+    
+    /* 메인배너 견전문의하기 버튼 */
+    button.main {width: 190px;}
+    button.main .circle { width: 3rem; height: 3rem; border-radius: 1.625rem;}
+    button.main .circle .icon.arrow::before {top: -0.25rem; width: 0.625rem; height: 0.625rem;}
+    button.main .circle .icon.arrow {width: 1.125rem; left: 0.625rem;}
+    button.main .button-text {font-size: 20px; margin: 0 0 0 2.5rem;}
+
+
+    /* 버튼 공통 */
+    button {width: 9.5rem;}
+    button .circle {width: 2rem;height: 2rem;}
+    button .circle .icon.arrow {left: 0.1rem;}
+    button .button-text {line-height: 15px; font-size: 17px;}
+
+  
+
+
+
+
+    /*********** 2. 섹션1 [브랜드스토리] ***********/
+    #introduce_section {background-color: #F8FAFF;}
+    .section_listbox p {font-size: 5vw;margin-top: 3%;}
+    .section_listbox>.icon_area {height: 100%;margin: 2%;transition: all 0.4s;}
+
+
+    #introduce_section .section_listbox .icon_box {margin-bottom: 4%;}
+
+
+
+    /*********** 3. 섹션2 [서비스안내] ***********/
+    #service_section .section_listbox h4 {line-height: 15vw}
+
+   
+
+    /* 푸터 */
+    .footer_area {padding: 5% 0;}
+    .foot_logo {width: 180px;}
+    .footer_info { font-size: 13px;}
+    .copyright {font-size: 13px;}
+    .space {display: none;}
+
+
+
+
+
+
+    /************ 서브페이지 공통영역 ************/
+    .introduce_main .section_area,
+    .center_wrap .section_area{padding: 10% 0 20%;}
+    
+    .introduce_wrap .section_area .section_title p, .service_wrap .section_area .section_title p{font-size: 5vw;}
+    
+    
+
+    /************ introduce.html.html ************/
+    .introduce_main .section_area .section_title .sub{font-size: 6vw;}
+    .svg_mo{display: block;}
+    .svg_pc{display: none;}
+    
+ 
+
+   /************ center.html ************/ 
+ 
+    .map_img{width:100%; margin-right: 40px;}
+    .map_txt h2{ font-size: 6vw;}
+    .map_txt h2::before{width: 18px;height: 25px;}
+    .map_txt .addr{font-size: 5vw; padding: 5% 0;}
+
+
+    /************ service.html ************/ 
+    .service_wrap .service_main .section_area {padding: 10% 0 0;}
+    #fulfillment_section .section_listbox{ padding: 0 0 20%;}
+    .section1_txt h2{font-size: 9vw; line-height: 11vw;}
+    .section1_txt{margin-right: 0;}
+    .section1_txt .Process_txt h3{font-size: 7vw;}
+    .section1_txt .Process_txt li{margin-bottom: 10%;}
+    .section1_txt .Process_txt li p{line-height:1.3;}
+    #fulfillment_section .section_listbox h4{font-size: 6vw;}
+    #fulfillment_section .section_title h2{margin: 3vw 0 -1vw;}
+    #fulfillment_section .section_listbox .icon_wrap .icon_box{height:unset; line-height: unset;}
+
+
+
+
+
+
+
+/************ estimate.html ************/ 
+    #estimate_section .estimate_box {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        font-size: 7vw;
+      }
+      .contact{width: 100%; margin:0 auto; font-size: 6vw;}
+      .contact li:nth-child(1){width:30%;}
+}
+
+/************** max-width 500px 끝 *********************/
