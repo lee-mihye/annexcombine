@@ -212,12 +212,16 @@
     button.main .circle { display: none;}
     button.main .button-text {font-size: 20px; margin: 0;}
 
+    button.main.active{background-color: #fff;}
+    button.main.active .button-text{color:#000;}
 
     /* 버튼 공통 */
     button {width: 8.5rem; height: 40px;}
     button .circle {display: none;}
     button .button-text {font-size: 5.5vw; margin:0; line-height:1; transition: none;}
-
+    
+    button.active{background-color: #000;}
+    button.active .button-text{color:#fff;}
   
 
 
