@@ -209,14 +209,12 @@
     
     /* 메인배너 견전문의하기 버튼 */
     button.main {width: 160px; height: 45px;}
-    button.main:active{background-color: #fff;}
     button.main .circle { display: none;}
     button.main .button-text {font-size: 20px; margin: 0;}
 
 
     /* 버튼 공통 */
     button {width: 8.5rem; height: 40px;}
-    button:active{background-color: #000;}
     button .circle {display: none;}
     button .button-text {font-size: 5.5vw; margin:0; line-height:1; transition: none;}
 

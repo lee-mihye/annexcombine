@@ -112,7 +112,7 @@ button.main:hover .circle .icon.arrow {
   background: #000;
 }
 
-button.main:hover .button-text,button.main:active .button-text {
+button.main:hover .button-text {
   color: #000;
 }
 
@@ -199,7 +199,7 @@ button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
 }
-button:hover .button-text,button:active .button-text {
+button:hover .button-text {
   color: #fff;
 }
 
