@@ -225,7 +225,7 @@
     /* 터치했을때 배경색 하얗게 */
     button.main:active{background-color: #fff;}
     /* 터치했을때 글씨색 검정색 */
-    button.main:active .button-text{color:#000;}
+    button.main .button-text:active{color:#000;}
 
     /* 버튼 공통 */
     button {width: 8.5rem; height: 40px;}
@@ -233,7 +233,7 @@
     button .button-text {font-size: 5.5vw; margin:0; line-height:1; transition: none; color:#000;}
     
     button:active{background-color: #000;}
-    button:active .button-text{color:#fff;}
+    button.button-text:active {color:#fff;}
   
 
 
