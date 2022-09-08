@@ -10,10 +10,12 @@ $(function () { /////// jQB ///////////////////////
     $(".click_btn").click(function () {
         $(this).addClass("active");
         $(".click_btn .button-text").addClass("active");
+        return;
     })
     $(".main.click_btn").click(function () {
         $(this).addClass("active");
         $(".main.click_btn .button-text").addClass("active");
+        return;
     })
 
 
