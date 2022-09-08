@@ -222,7 +222,9 @@
     button.main .circle { display: none;}
     button.main .button-text {font-size: 20px; margin: 0;}
 
+    /* 터치했을때 배경색 하얗게 */
     button.main:active{background-color: #fff;}
+    /* 터치했을때 글씨색 검정색 */
     button.main:active .button-text{color:#000;}
 
     /* 버튼 공통 */

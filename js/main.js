@@ -6,20 +6,22 @@ $(function () { /////// jQB ///////////////////////
 
 
     ////////// active //////////////
-    $(".click_btn").on('touchstart', function (event) {
-        $(".click_btn .button-text").addClass("active");
+    $(".click_btn").on('touchstart', function (event) { 
+        $(this).addClass("active"); 
     });
 
     $(".click_btn").on('touchend', function (event) {
-        $(".click_btn .button-text").removeClass('active');
+        $(this).removeClass('active');
     });
 
+
+
     $(".main.click_btn").on('touchstart', function (event) {
-        $(".main.click_btn .button-text").addClass("active");
+        $(this).addClass("active");
     });
 
     $(".main.click_btn").on('touchend', function (event) {
-        $(".main.click_btn .button-text").removeClass('active');
+        $(this).removeClass('active');
     });
 
 
