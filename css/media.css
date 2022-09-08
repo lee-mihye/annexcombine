@@ -18,6 +18,8 @@
 
 @media (hover: hover) {
   #introduce_section .section_listbox>.icon_area:hover {background-color: transparent;color: #000;}
+  button:hover .button-text{color: #fff;}
+  button.main:hover .button-text{color: #000;}
 }
 
 @media only screen and (max-width:1470px) {
