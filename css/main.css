@@ -112,7 +112,7 @@ button.main:hover .circle .icon.arrow {
   background: #000;
 }
 
-button.main:hover .button-text {
+button.main:hover .button-text,button.main:active .button-text {
   color: #000;
 }
 
@@ -225,6 +225,7 @@ button:hover .button-text {
   flex-flow: row wrap;
 }
 #introduce_section .section_listbox .icon_box {margin-bottom: 35px;}
+#introduce_section .section_listbox .icon_box img{width: 100%;}
 .section_listbox h4 {font-size: 27px;}
 .section_listbox p {font-size: 18.5px;margin-top: 10px;}
 .section_listbox>.icon_area {
@@ -327,7 +328,7 @@ button:hover .button-text {
 #fulfillment_section .section_area{padding-bottom: 0;}
 #fulfillment_section .section_title{text-align: left; padding-bottom: 0;}
 #fulfillment_section .section_title h2{margin: 20px 0 -10px;}
-#fulfillment_section .section_listbox{max-width: 1400px; margin: 0 auto; padding: 0 0 60px;}
+#fulfillment_section .section_listbox{max-width: 1400px; margin: 0 auto; padding: 0 0 100px;}
 #fulfillment_section .section_listbox>.icon_area{width:320px;margin: 15px;}
 #fulfillment_section .section_listbox .icon_wrap{padding: 0;}
 #fulfillment_section .section_listbox .icon_wrap .icon_box{margin: 0 auto; width:180px; height:210px; line-height: 210px;}
