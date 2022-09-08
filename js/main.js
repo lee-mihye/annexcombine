@@ -5,19 +5,14 @@ $(function () { /////// jQB ///////////////////////
 
 
 
-    ////////// click //////////////
+    ////////// active //////////////
+    $('.click_btn,.main.click_btn').live('touchstart', function (event) {
+        $(".click_btn .button-text, .main.click_btn .button-text").addClass("active");
+    });
 
-    $(".click_btn").click(function () {
-        $(this).addClass("active");
-        $(".click_btn .button-text").addClass("active");
-        return;
-    })
-    $(".main.click_btn").click(function () {
-        $(this).addClass("active");
-        $(".main.click_btn .button-text").addClass("active");
-        return;
-    })
-
+    $('.click_btn,.main.click_btn').live('touchend', function (event) {
+        $(".click_btn .button-text, .main.click_btn .button-text").removeClass('active');
+    });
 
 }); ////////// jQB ///////////////////////////////
 /////////////////////////////////////////////////
