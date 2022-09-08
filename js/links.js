@@ -34,7 +34,7 @@ $(function () { /////// jQB ///////////////////////
     }); //////// click //////////////
 
     // 모바일 햄버거 메뉴 견적문의 바로가기 버튼 이동
-    $(".gnb_ham > .gnb > a").click(function (e) {
+    $(".gnb_ham > .gnb2 > a").click(function (e) {
         e.preventDefault();
         location.href = "estimate.html"
     });

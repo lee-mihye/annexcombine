@@ -9,7 +9,9 @@
 .header_area .logo img{display: block;}
 .header_area .gnb{display: flex;}
 .header_area .gnb li{margin-left: 50px;}
+.header_area .gnb li a.on{font-weight: bold;}
 .header_area .gnb li a{height:50px; line-height:50px; display: block; font-size: 18px;}
+
 .header_area .gnb li a:hover{font-weight: bold;transition: .2s linear;}
 .header_area .gnb li a:not(:hover){transition: .2s linear;}
 
