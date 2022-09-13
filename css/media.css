@@ -205,7 +205,7 @@
     .section_area {padding: 20% 0;}
     .section_title {text-align: center;padding-bottom: 5%;}
     .section_title h3 {font-size: 5.5vw; line-height: 1;}
-    .section_title h2 {font-size: 9vw; line-height: 11vw; margin: 4vw 0; letter-spacing: -1.3px!important;}
+    .section_title h2 {font-size: 8.9vw; line-height: 11vw; margin: 4vw 0; letter-spacing: -1.3px!important;}
     .section_listbox .icon_wrap {padding: 10%;}
 
     /* 섹션 버튼 공통 */
@@ -248,7 +248,10 @@
 
 
     /*********** 3. 섹션2 [서비스안내] ***********/
-    #service_section .section_listbox h4 {line-height: 15vw}
+    #service_section .section_listbox h4 {line-height: 15vw; border:none;}
+    #service_section .section_listbox .icon_wrap{margin-bottom:4%;}
+    #service_section .section_listbox .icon_area:last-child .icon_wrap:last-child {margin-bottom: 0;}
+    
 
    
 
