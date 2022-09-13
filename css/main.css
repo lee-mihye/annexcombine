@@ -68,22 +68,16 @@
   -o-animation: fadeInUp 1s; /* Opera */
 }
 
-/* 메인배너 견전문의하기 버튼 */
-button.main {
-  border: 1px solid #fff;
-}
-button.main {
-  width: 18rem;
-}
+/* 메인배너 견적문의하기 버튼 */
+button.main {border: 1px solid #fff;}
+button.main {width: 18rem;}
 button.main .circle {
   width: 4rem;
   height: 4rem;
   background: #fff;
   border-radius: 2.625rem;
 }
-button.main .circle .icon {
-  background: #000;
-}
+button.main .circle .icon {background: #000;}
 button.main .circle .icon.arrow {
   width: 1.5rem;
   left:0.725rem;
@@ -97,7 +91,6 @@ button.main .circle .icon.arrow::before {
   border-right: 0.125rem solid #000;
 }
 
-
 button.main .button-text {
   color: #fff;
   line-height: 1.1;
@@ -105,22 +98,14 @@ button.main .button-text {
   margin:0 0 0 2.85rem
 }
 
-button.main:hover .circle {
-  width: 100%;
-}
-button.main:hover .circle .icon.arrow {
-  background: #000;
-}
+button.main:hover .circle {width: 100%;}
+button.main:hover .circle .icon.arrow {background: #000;}
+button.main:hover .button-text {color: #000;}
 
-button.main:hover .button-text {
-  color: #000;
-}
+
 
 /* 버튼 공통 */
-
-*::before, *::after {
-  box-sizing: border-box;
-}
+*::before, *::after {box-sizing: border-box;}
 
 button {
   position: relative;
@@ -192,16 +177,12 @@ button .button-text {
   text-transform: uppercase;
   font-size: 20px;
 }
-button:hover .circle {
-  width: 100%;
-}
+button:hover .circle {width: 100%;}
 button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
 }
-button:hover .button-text {
-  color: #fff;
-}
+button:hover .button-text {color: #fff;}
 
 
 
@@ -347,7 +328,6 @@ button:hover .button-text {
 
 #estimate_main .section_title{padding-bottom: 0;}
 #estimate_main .section_title h2{margin:20px 0 0;}
-
 
 #estimate_section .section_title{padding-bottom: 0;}
 #estimate_section .estimate_box {
