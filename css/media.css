@@ -156,14 +156,7 @@
             background-color: transparent;
             color: #000;
         }
-
-        /* button:hover .button-text {
-            color: #fff;
-        }
-
-        button.main:hover .button-text {
-            color: #000;
-        } */
+        
     }
     /* index.html */
     /************* 헤더영역 *************/
@@ -221,19 +214,20 @@
     button.main {width: 160px; height: 45px;}
     button.main .circle { display: none;}
     button.main .button-text {font-size: 20px; margin: 0; color:#fff;}
+    button.main:hover .button-text {color: #fff;} 
+    /* active 했을때 */
+    button.main:active{background-color: #fff;}
+    button.main:active .button-text{color:#000;}
 
-    /* 터치했을때 배경색 하얗게 */
-    /* button.main:active{background-color: #fff;} */
-    /* 터치했을때 글씨색 검정색 */
-    /* button.main .button-text:active{color:#000;} */
 
     /* 버튼 공통 */
     button {width: 8.5rem; height: 40px;}
     button .circle {display: none;}
     button .button-text {font-size: 5.5vw; margin:0; line-height:1; transition: none; color:#000;}
-    
-    /* button:active{background-color: #000;}
-    button.button-text:active {color:#fff;} */
+    button:hover .button-text {color: #000;}
+    /* active 했을때 */
+    button:active{background-color: #000;}
+    button:active .button-text{color:#fff;}
   
 
 
