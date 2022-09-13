@@ -151,20 +151,20 @@
 
 
 @media only screen and (max-width:500px) {
-    /* @media (hover: hover) {
+    @media (hover: hover) {
         #introduce_section .section_listbox>.icon_area:hover {
             background-color: transparent;
             color: #000;
         }
 
-        button:hover .button-text {
+        /* button:hover .button-text {
             color: #fff;
         }
 
         button.main:hover .button-text {
             color: #000;
-        }
-    } */
+        } */
+    }
     /* index.html */
     /************* 헤더영역 *************/
     /* 모바일사이즈에서 BR태그 빼기 */
@@ -223,17 +223,17 @@
     button.main .button-text {font-size: 20px; margin: 0; color:#fff;}
 
     /* 터치했을때 배경색 하얗게 */
-    button.main:active{background-color: #fff;}
+    /* button.main:active{background-color: #fff;} */
     /* 터치했을때 글씨색 검정색 */
-    button.main .button-text:active{color:#000;}
+    /* button.main .button-text:active{color:#000;} */
 
     /* 버튼 공통 */
     button {width: 8.5rem; height: 40px;}
     button .circle {display: none;}
     button .button-text {font-size: 5.5vw; margin:0; line-height:1; transition: none; color:#000;}
     
-    button:active{background-color: #000;}
-    button.button-text:active {color:#fff;}
+    /* button:active{background-color: #000;}
+    button.button-text:active {color:#fff;} */
   
 
 
