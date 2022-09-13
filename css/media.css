@@ -151,7 +151,7 @@
 
 
 @media only screen and (max-width:500px) {
-    @media (hover: hover) {
+    /* @media (hover: hover) {
         #introduce_section .section_listbox>.icon_area:hover {
             background-color: transparent;
             color: #000;
@@ -164,7 +164,7 @@
         button.main:hover .button-text {
             color: #000;
         }
-    }
+    } */
     /* index.html */
     /************* 헤더영역 *************/
     /* 모바일사이즈에서 BR태그 빼기 */
