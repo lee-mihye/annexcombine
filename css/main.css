@@ -349,6 +349,6 @@ button:hover .button-text {color: #fff;}
   clear: both;
 }
 .contact_area{margin-top:30px;}
-.contact{width: 450px; margin:0 auto; font-size: 24px;}
+.contact{width: 525px; margin:0 auto; font-size: 24px;}
 .contact li{float: left;}
 .contact li:nth-child(1){width:120px; text-align:left;color: #00BAB3; font-weight: bold;}
